@@ -5,10 +5,11 @@
 s = int(input('Введите сумму чисел: '))
 p = int(input('Введите произведение чисел: '))
 d = s**2 - 4 * p
+print(d)
 for y in range(1001):
     if d >= 0 and (y**2 - s * y + p == 0):
         x = s - y
         print('Вы загадали числа: ', x, 'и', y)
         break
 else:
-    print('Нет решения')
+    print('Таких натуральных чисел нет')

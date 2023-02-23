@@ -12,4 +12,4 @@ if d >= 0 and s <= 2000 and (math.sqrt(d)%2==0 or (math.sqrt(d)+1)%2==0):
     y = int((s - math.sqrt(d))/2)
     print('Вы загадали числа: ', x, 'и', y)
 else:
-    print('нет решения')
+    print('Таких натуральных чисел нет')

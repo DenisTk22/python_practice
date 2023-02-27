@@ -9,14 +9,14 @@
 n = int(input('Введите длину списка: '))
 list_a = []
 for i in range(n):
-    list_a.append(input('Ведите число: ')) 
+    list_a.append(input('Ведите число: '))
 print(list_a)
 
-x = input('Какое число вас интерсует? ')
+x = int(input('Какое число вас интерсует? '))
 sum = 0
 
 for i in range(n):
-    if list_a[i] == x:
+    if int(list_a[i]) == x:
         sum += 1
 print('Ваше число встречается', sum, 'раз(а)') 
 

@@ -51,10 +51,9 @@ values = [values.append(abc[i]) for i in abc]
 list_a = []
 n = 4
 for i in range(n):
-    list_a.append(input('Ведите число: '))
+    list_a.append(int(input('Ведите число: ')))
 print('list_a:')
 print(min(list_a), max(list_a))
-print(int(min(list_a)), int(max(list_a)))
 print('*****')
 
 print('list_b:')

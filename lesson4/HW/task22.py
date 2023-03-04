@@ -5,10 +5,10 @@ n = int(input('Введите длину первого списка: '))
 list1 = []
 list2 = []
 for i in range(n):
-    list1.append(input('Ведите число первого списка: '))
+    list1.append(input('Введите число первого списка: '))
 print(list1)
 m = int(input('Введите длину второго списка: '))
 for i in range(m):
-    list2.append(input('Ведите число второго списка: '))
+    list2.append(input('Введите число второго списка: '))
 print(list2)
 print(sorted(set(list1 + list2)))

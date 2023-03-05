@@ -5,6 +5,8 @@
 #     A = 2; B = 3 -> 8
 
 def stepen(a, b):
+    if b == 0:
+        return 1
     if b == 1:
         return a
     return stepen(a, b-1)*a

@@ -12,4 +12,4 @@ for n in range(2, num+1):
 a.insert(0, a1)
 print(a)
 
-#a = a.append(b = a1 + (n-1)*d n for n in range(2, num+1))
+#a = a.append(a1 + (n-1)*d n for n in range(2, num+1))

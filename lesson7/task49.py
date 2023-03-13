@@ -15,5 +15,5 @@ def find_farthest_orbit(li):
 #orbits = [tuple(map(int, input().split())) for i in range(int(input('Количество орбит: ')))]
 
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3), (11, 11)]
-print(*find_farthest_orbit(orbits))
+print(find_farthest_orbit(orbits))
 

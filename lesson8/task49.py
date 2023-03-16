@@ -29,7 +29,8 @@ def show_all():
 
 
 def add_new_contact(): #сделать через список, Добавить проверку не существует ли такой же записи (if else) и проверка 
-    array = ["surname", "name", "patronymic", "phone_number"]
+    global last_id
+    array = ["Surname: ", "Name: ", "Patronymic: ", "Phone_number: "]
     string = ""
     for i in array:
         string += input(f"Enter {i} ") + " "
@@ -43,7 +44,7 @@ def main_menu():
     play = True
     while play:
         read_records()
-        answer = input("Phone book: \n"             # добавить подменю
+        answer = input("Phone book: \n"             
                        "1. Show all records\n"      #
                        "2. Add a record\n"          #
                        "3. Search a record\n"       # разбить на две функции, берем all_data и прогоняем

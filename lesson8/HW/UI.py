@@ -1,7 +1,7 @@
 
 from tabulate import tabulate
 
-def new_contact():
+def add_new_contact():
     contact = {'id': ''}
     contact['surname'] = input('Input surname: ')
     while contact['surname'] == '':
@@ -18,27 +18,25 @@ def new_contact():
     return contact
 
 
-def show_all_data(data):
-    data_to_show = []
-    data_to_print = []
+def show_all_contact(): #(data)
+    contact_in = {'id': '', 'surname': '65156', 'name': 'Hyt', 'patronymic': 'UHT', 'phone': '651', 'comment': 'jkhlj'}
+    contact_out = []
 
-    for i in range(len(data)):
-        li = list(data[i].values())
-        li.pop(0)
-        data_to_print.append(li)
+    for i in range(len(contact_in)):
+        contact_line = list(contact_in.values())
+        contact_line.pop(0)
+    contact_out.append(contact_line)
 
-    params = ["Surname", "Name", "Patronymic", "Phone number", "Comment"]
-    print(data_to_print)
-    print(tabulate(data_to_show, headers=params, tablefmt="fancy_grid", showindex="never"))
+
+    heads = ["Surname", "Name", "Patronymic", "Phone number", "Comment"]
+    print(tabulate(contact_out, headers=heads, tablefmt="rounded_outline", colalign="right"))
 
 def search_contact():
     print("Your can search a contact by surname, name or phone number")
-    search_by = input("Input here: ")
+    search_by = input("Write here: ")
     return search_by
 
-new_contact()
 
-show_all_data(data)
 
-search_contact()
+show_all_contact()
 

@@ -37,6 +37,21 @@ def search_contact():
     return search_by
 
 
+def user_choice():
+    play = True
+    while play:
+        answer = input("Phone book: \n"             
+                       "1. Show all records\n"      #
+                       "2. Add a record\n"          #
+                       "3. Search a record\n"       # разбить на две функции, берем all_data и прогоняем
+                       "4. Change\n"                # проверка есть ли такая id
+                       "5. Delete\n"                #
+                       "6. Exp/Imp\n"               # Exp - выгрузка текущей базы в файл + расширение, Imp - изменение файл base, ввести с расширением
+                       "7. Exit\n")                 # 
+    return answer
 
-show_all_contact()
+
+#show_all_contact()
+
+user_choice()
 
